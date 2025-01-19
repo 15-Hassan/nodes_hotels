@@ -1,0 +1,21 @@
+db.js ma Mere pass yh error ae hn jb mna mongbd url ko env file ma dla. or yh error islia aya qk mongdb ki alg file hn or us ma hme 
+.env ki libary zror dlni hote hn or  blka khye bhe ap env use kro us ki libray zrori likhni hotehn 
+ERROR:
+{Example app listening on port 5000
+Mongodb connection error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (E:\Programming\nodejs\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:225:11)
+    at NativeConnection.openUri (E:\Programming\nodejs\node_modules\mongoose\lib\connection.js:1016:34)
+    at Mongoose.connect (E:\Programming\nodejs\node_modules\mongoose\lib\mongoose.js:446:15)
+    at Object.<anonymous> (E:\Programming\nodejs\db.js:13:10)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);}
+
+    Resolve:
+    {require('dotenv').config()}
+    ######################################################################################################################################################################################

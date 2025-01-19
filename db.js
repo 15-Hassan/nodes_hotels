@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 // const mongoURL = 'mongodb://localhost:27017/hotels'
-const mongoURL = 'mongodb://127.0.0.1:27017/hotels' // Replace hotels with your data base
+// const mongoURL = 'mongodb://127.0.0.1:27017/hotels' // Replace hotels with your data base
+const mongoURL = process.env.DBURL
 // mongodb://127.0.0.1:27017
 // mongoose.connect(mongoURL, {
 //     useNewUrlParser:true,

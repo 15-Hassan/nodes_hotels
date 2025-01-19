@@ -1,10 +1,11 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 5000  // jb hm ise online upload krye ge to machine apna lost number dha or machine host number nhe uthna ka lia or ka sign us ekia
 const db = require('./db');
-const Person = require('./models/Person');
+const Person = require('./routes/Person');
 const bodyParser = require('body-parser');
-const menu = require('./models/menu')
+const menu = require('./routes/menu')
+require('dotenv').config()
 
 // Always keep in mind agar ap nodemon library ma kam nhe to jo jo request ap set kro ge, uthni dfa ap ko server start krna hoge, blka nodemon ma zorrt nhe hn  is ki
 
